@@ -5,7 +5,7 @@ $data = ["BY", "AX", "CZ", "AZ", "BY", "BY", "AX", "CZ", "BY", "BY", "CZ", "CX",
     $deux = 2;
     $trois = 3;
     $quatre = 4;
-//    $cinq = 5;
+    $cinq = 5;
     $six = 6;
     $sept = 7;
     $huit = 8;
@@ -14,26 +14,27 @@ $data = ["BY", "AX", "CZ", "AZ", "BY", "BY", "AX", "CZ", "BY", "BY", "CZ", "CX",
     $rep2="CX";
     $rep3="AZ";
     $rep4="AX";
-//    $rep5="BY";
+    $rep5="BY";
     $rep6="CZ";
     $rep7="CY";
     $rep8="AY";
     $rep9="BZ";
 
 
-$cinq = 5;
-$rep5="BY";
-//str_replace($rep1,$un, $data);
-//str_replace($rep2,$deux, $data);
-//str_replace($rep3,$trois, $data);
-//str_replace($rep4,$quatre, $data);
-str_replace($rep5,$cinq, $data);
-//str_replace($rep6,$six, $data);
-//str_replace($rep7,$sept, $data);
-//str_replace($rep8,$huit, $data);
-//str_replace($rep9,$neuf, $data);
 
-var_dump($data[0]);
+$data = str_replace($rep1,$un, $data);
+$data = str_replace($rep2,$deux, $data);
+$data = str_replace($rep3,$trois, $data);
+$data = str_replace($rep4,$quatre, $data);
+$data = str_replace($rep5, $cinq, $data);
+$data = str_replace($rep6,$six, $data);
+$data = str_replace($rep7,$sept, $data);
+$data = str_replace($rep8,$huit, $data);
+$data = str_replace($rep9,$neuf, $data);
+
+$sum = array_sum($data);
+var_dump($sum);
+var_dump($data);
 
 
 
